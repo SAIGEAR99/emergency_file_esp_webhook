@@ -5525,7 +5525,7 @@ mqttClient.on('message', (topic, message) => {
     latestTemp_air = parseFloat(message.toString());
 }else if (topic === MQTT_TOPIC_RAIN) {
   latestRain = parseFloat(message.toString());
-}else if (topic === MQTT_TOPIC_TDS) {
+}else if (topic === MQTT_TOPIC_TDS) { 
   latestTds = parseFloat(message.toString());
 }else if (topic === MQTT_TOPIC_LIGHT) {
   latestLight = parseFloat(message.toString());
